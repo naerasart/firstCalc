@@ -1,0 +1,45 @@
+ body {
+     background-color: fuchsia;
+     padding-top: 6em;
+ }
+ 
+ #display {
+     height: 50px;
+     width: 277px;
+     text-align: right;
+     background-color: orangered;
+     font-size: 30px;
+     left: 2px;
+     top: 2px;
+     color: #7fff00;
+     padding-bottom: 2px;
+ }
+ 
+ #display2 {
+     height: 32px;
+     width: 277px;
+     text-align: right;
+     background-color: orange;
+     font-size: 17px;
+     left: 2px;
+     top: 2px;
+     color: #7fff00;
+     padding-bottom: 2px;
+ }
+ 
+ input[type=button] {
+     width: 65px;
+     height: 50px;
+     background-color: purple;
+     font-size: 18px;
+     color: pink;
+ }
+ 
+ input[type=button]:hover {
+     background-color: lightslategrey;
+ }
+ 
+ .box {
+     margin-left: 38%;
+     margin-right: 35%;
+ }

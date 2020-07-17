@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="calc.css">
+
+</head>
+
+<body>
+    <div class=box>
+
+        <form name="firstCalc">
+            <table>
+                <div class="row">
+                    <div><input id="display2"></div>
+                    <div><input id="display" value="0"></div>
+                </div>
+
+
+                <tr>
+                    <td><input type="button" value="sin" onclick="if(checking(this.form.display.value)) { sin(this.form) };typing(this.form.display2, 'sin') "></td>
+                    <td><input type="button" value="cos" onclick="if(checking(this.form.display.value)) { cos(this.form) };typing(this.form.display2, 'cos')"></td>
+                    <td><input type="button" value="tan" onclick="if(checking(this.form.display.value)) { tan(this.form) };typing(this.form.display2, 'tan')"></td>
+                    <td><input type="button" value="AC" onclick="this.form.display.value= 0 ;this.form.display2.value= ''"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="button" value="x&#178" onclick="if(checking(this.form.display.value)) { square(this.form);typing(this.form.display2, '&#178') }"></td>
+                    <td><input type="button" value="x&#179" onclick="if(checking(this.form.display.value)) { cube(this.form);typing(this.form.display2, '&#179') }"></td>
+                    <td><input type="button" value="&radic;" onclick="if(checking(this.form.display.value)) { sqrt(this.form) };typing(this.form.display2, '&radic;')"></td>
+                    <td><input type="button" value="del" onclick="deleting(this.form.display);deleting(this.form.display2)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="7" onclick="typing(this.form.display, '7');typing(this.form.display2, '7')"></td>
+                    <td><input type="button" value="8" onclick="typing(this.form.display, '8');typing(this.form.display2, '8')"></td>
+                    <td><input type="button" value="9" onclick="typing(this.form.display, '9');typing(this.form.display2, '9')"></td>
+                    <td><input type="button" value="/" onclick="typing(this.form.display, '/');typing(this.form.display2, '/')"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="4" onclick="typing(this.form.display, '4');typing(this.form.display2, '4')"></td>
+                    <td><input type="button" value="5" onclick="typing(this.form.display, '5');typing(this.form.display2, '5')"></td>
+                    <td><input type="button" value="6" onclick="typing(this.form.display, '6');typing(this.form.display2, '6')"></td>
+                    <td><input type="button" value="X" onclick="typing(this.form.display, '*');typing(this.form.display2, '*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="typing(this.form.display, '1');typing(this.form.display2, '1')"></td>
+                    <td><input type="button" value="2" onclick="typing(this.form.display, '2');typing(this.form.display2, '2')"></td>
+                    <td><input type="button" value="3" onclick="typing(this.form.display, '3');typing(this.form.display2, '3')"></td>
+                    <td><input type="button" value="-" onclick="typing(this.form.display, '-');typing(this.form.display2, '-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="typing(this.form.display, '0');typing(this.form.display2, '0')"></td>
+                    <td><input type="button" value="." onclick="typing(this.form.display, '.');typing(this.form.display2, '.')"></td>
+                    <td><input type="button" value="=" onclick="if(checking(this.form.display.value)) { computing(this.form) }"></td>
+                    <td><input type="button" value="+" onclick="typing(this.form.display, '+');typing(this.form.display2, '+')"></td>
+                </tr>
+
+            </table>
+        </form>
+        <script src="firstCalc.js"></script>
+    </div>
+</body>
+
+
+</html>
